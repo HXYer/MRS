@@ -119,6 +119,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+BASE_PATH = os.path.join(BASE_PATH, '../')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_PATH, 'static/'),
+)
+
 STATIC_URL = '/static/'
 
 X_FRAME_OPTIONS = 'ALLOWALL'  # for firefox can't open

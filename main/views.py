@@ -6,8 +6,7 @@ import re
 
 
 def index(request):
-    return HttpResponse('<form action="answer" method="get"><p>name: <input type="text" '
-                        'name="moviename" /></p><input type="submit" value="Submit" /></form>')
+    return render(request, 'index.html')
 
 
 def answer(request):
