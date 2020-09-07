@@ -19,8 +19,11 @@
 		<h1>仪表检测</h1>
 		<ul>
 			<li>
-				<input type="file">
-				<button> 提交 </button>
+                <form enctype="multipart/form-data" action='read_image' method="POST">
+                    {% csrf_token %}
+				    <input type="file" name="srcImage">
+				    <input type="submit" value="Submit">
+                </form>
 			</li>
 			<li><img src="static/images/zp2.jpg" alt=""></li>
 			<li><label>
@@ -38,4 +41,5 @@
 		</ul>
 	</div>
 </body>
+
 </html>
