@@ -25,9 +25,15 @@
 				    <input type="submit" value="Submit">
                 </form>
 			</li>
-			<li><img src="static/images/zp2.jpg" alt=""></li>
+
+			<li>
+                {% if havephoto %}
+                <img src="static/test/eval.jpg" alt="">
+                {% endif %}
+            </li>
+
 			<li><label>
-                <input type="text" readonly="readonly">
+                <input type="text" value="{{ ans }}" readonly="readonly">
             </label></li>
 		</ul>
 	</div>
