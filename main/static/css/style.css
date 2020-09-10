@@ -5,10 +5,10 @@ header a:hover { color: orange; }
 header span { color: yellow; margin-left: 20px; }
 header i img { width: 50px; height: 50px; vertical-align: middle; margin-right: 30px; transition: all 1s; }
 header i:hover img { transform: rotate(360deg); }
-.banner { width: 100%; height: 687px; background: url(../images/banner.jpg)no-repeat top center; }
+.banner { width: 100%; height: 687px; background: url(../images/background.jpg)no-repeat top center; }
 .zp { width: 100%; background-color: #08858b; padding: 20px 0 60px; text-align: center;}
 .zp ul { width: 1000px; margin: 0 auto; overflow: hidden; }
-.zp ul li { float: left; margin-right: 31px; width: 305px; height: 230px; overflow: hidden; border: 3px solid white;  }
+.zp ul li { float: left; margin-right: 31px; width: 305px; height: 230px; overflow: hidden; }
 .zp h1 { color: white; line-height: 80px; letter-spacing: 5px; }
 .zp ul li:hover img { transform: scale(1.1); }
 .zp ul li:last-child { margin-right: 0; }

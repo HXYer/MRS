@@ -30,7 +30,6 @@ def getFourNumber(path):
 def predict(path):
     img, numbers = getFourNumber(path)
     transform_train = transforms.Compose([
-        transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
     ])
 
